@@ -32,7 +32,7 @@ module.exports = function(_call) {
         address: address,
         page: (page || 0) + 1,
         offset: PAGE_SIZE,
-        sort: 'asc'
+        sort: 'desc'
       });
     }
   };
