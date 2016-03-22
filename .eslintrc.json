@@ -1,0 +1,12 @@
+{
+  "extends": "./node_modules/eslintrc/.eslintrc.json",
+  "env": {
+    "node": true,
+    "mocha": true,
+    "browser": true
+  },
+  "globals": {
+    "Promise": true,
+    "fetch": true
+  }
+}

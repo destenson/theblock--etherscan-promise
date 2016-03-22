@@ -1,0 +1,44 @@
+{
+  "name": "etherscan-promise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theblock/etherscan-promise.git"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "postinstall": "gulp fast"
+  },
+  "keywords": [
+    "Ethereum",
+    "Etherscan.io",
+    "Promise"
+  ],
+  "author": "Jaco Greeff <jacogr@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.6.5",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "bignumber.js": "^2.3.0",
+    "browserify": "^13.0.0",
+    "es6-promise": "^3.1.2",
+    "isomorphic-fetch": "^2.2.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^5.0.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "del": "^2.2.0",
+    "eslintrc": "theblock/eslintrc#a84474ba693e9451403385f6f110064f3c9558d9",
+    "estraverse-fb": "^1.3.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5",
+    "nock": "^7.2.2"
+  }
+}
