@@ -1,5 +1,5 @@
 {
-  "extends": "./node_modules/eslintrc/.eslintrc.json",
+  "extends": "./node_modules/@theblock/eslintrc/.eslintrc.json",
   "env": {
     "node": true,
     "mocha": true,
