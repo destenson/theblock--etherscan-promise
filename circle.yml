@@ -1,0 +1,15 @@
+machine:
+  node:
+    version: 5.1.0
+  environment:
+    NODE_ENV: test
+
+deployment:
+  publish:
+    branch: master
+    commands:
+      - git config --global user.email "jacogr@gmail.com"
+      - git config --global user.name "CircleCI"
+      - git config --global push.default simple
+      - echo -e "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login
+      - echo -e "" | release-it

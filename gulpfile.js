@@ -25,17 +25,6 @@ gulp.task('js', () => {
     .pipe(gulp.dest('build/'));
 });
 
-gulp.task('js-fast', () => {
-  return gulp
-    .src(['src/**/*.js', '!src/**/*.spec.js'])
-    .pipe(babel())
-    .on('error', function(err) {
-      console.error(err.stack || err.message || err);
-      this.emit('end');
-    })
-    .pipe(gulp.dest('build/'));
-});
-
 const jsBrowserify = function() {
   return browserify({
       debug: false, // true,
@@ -53,15 +42,10 @@ gulp.task('js-web', ['js'], () => {
   return jsBrowserify();
 });
 
-gulp.task('js-web-fast', ['js-fast'], () => {
-  return jsBrowserify();
-});
-
-gulp.task('test', ['js'], () => {
+gulp.task('test', ['default'], () => {
   return gulp
     .src(['build/**/*.spec.js'])
     .pipe(mocha({ timeout: 180000 }));
 });
 
-gulp.task('fast', ['js-fast', 'js-web-fast']);
 gulp.task('default', ['js', 'js-web']);
