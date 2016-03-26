@@ -12,13 +12,12 @@
   },
   "keywords": [
     "Ethereum",
-    "Etherscan.io",
+    "EtherScan.io",
     "Promise"
   ],
   "author": "Jaco Greeff <jacogr@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bignumber.js": "^2.3.0",
     "es6-promise": "^3.1.2",
     "isomorphic-fetch": "^2.2.1"
   },
