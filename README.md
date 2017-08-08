@@ -1,5 +1,7 @@
 # etherscan-promise
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/destenson/theblock--etherscan-promise.svg)](https://greenkeeper.io/)
+
 A thin, lightweight promise wrapper for the api.etherscan.io/apis service, exposing a common endpoint for use elsewhere
 
 ## polyfill dependencies
